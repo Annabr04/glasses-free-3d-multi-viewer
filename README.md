@@ -11,8 +11,29 @@ You invent. The system supplies research sparks, code scaffolds, issue quarantin
 2. **Allocation Warden** — View allocation, light-field optimization, interleaving based on tracked positions.
 3. **Content Warden** — Content pipeline, 2D-to-3D helpers, crosstalk reduction, per-viewer rendering.
 
-### Guards
-Five supporting agents quarantine issues, monitor boundaries, track progress, and keep the structure clean so problems stay contained.
+### Guards (15 total — 5 dedicated to each Warden)
+Each warden has five specialized guards that quarantine issues, research, scaffolds, status, and boundaries so nothing spills across areas.
+
+#### Tracking Warden Guards
+- Tracking Guard
+- Tracking Research Guard
+- Tracking Scaffold Guard
+- Tracking Issue Guard
+- Tracking Status Guard
+
+#### Allocation Warden Guards
+- Allocation Guard
+- Allocation Research Guard
+- Allocation Scaffold Guard
+- Allocation Issue Guard
+- Allocation Status Guard
+
+#### Content Warden Guards
+- Content Guard
+- Content Research Guard
+- Content Scaffold Guard
+- Content Issue Guard
+- Content Status Guard
 
 ### Sequence
 1. Software pieces accumulate research notes, scaffolds, and issues in this repo.
@@ -24,5 +45,6 @@ Five supporting agents quarantine issues, monitor boundaries, track progress, an
 - `hardware/` — future optics, backlight, calibration
 - `issues/` — quarantined problem notes (mirrored from GitHub issues)
 - `packages/` — final packaged outputs
+- `GUARDS.md` — full guard roster and duties
 
 Progress is deliberate. No rushing. The plan guides the path.
