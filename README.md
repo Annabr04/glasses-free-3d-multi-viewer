@@ -1,50 +1,21 @@
-# glasses-free-3d-multi-viewer
+# Multi-Viewer Glasses-Free 3D
 
-Structured foundation for multi-viewer glasses-free 3D (autostereoscopic) systems.
+Research and prototype foundation for multi-viewer autostereoscopic (glasses-free 3D) display systems.
 
-You invent. The system supplies research sparks, code scaffolds, issue quarantine, progress organization, and packaging.
+The project aims to enable multiple simultaneous viewers to experience correct stereoscopic imagery without glasses. This is achieved by combining real-time multi-person tracking with dynamic view allocation and content generation.
 
-## Blueprint
+## Project Structure
 
-### Software Side First (Three Equal Parts — the Wardens)
-1. **Tracking Warden** — Multi-person face/eye tracking, pose estimation, prediction, sensor fusion.
-2. **Allocation Warden** — View allocation, light-field optimization, interleaving based on tracked positions.
-3. **Content Warden** — Content pipeline, 2D-to-3D helpers, crosstalk reduction, per-viewer rendering.
+- `software/tracking/` — Multi-person face and eye tracking, pose estimation, prediction, and sensor fusion. Supplies 3D viewer positions to other components.
+- `software/allocation/` — View allocation, light-field optimization, and interleaving based on tracked positions.
+- `software/content/` — Content pipeline, 2D-to-3D conversion helpers, crosstalk reduction, and per-viewer rendering.
+- `hardware/` — Future work on directional optics, backlight design, calibration, and compensation.
+- `packages/` — Packaged software and hardware modules once components are mature.
 
-### Guards (15 total — 5 dedicated to each Warden)
-Each warden has five specialized guards that quarantine issues, research, scaffolds, status, and boundaries so nothing spills across areas.
+## Current Status
 
-#### Tracking Warden Guards
-- Tracking Guard
-- Tracking Research Guard
-- Tracking Scaffold Guard
-- Tracking Issue Guard
-- Tracking Status Guard
+Software foundations are under development. Tracking research notes and a basic multi-viewer tracker scaffold are available under `software/tracking/`.
 
-#### Allocation Warden Guards
-- Allocation Guard
-- Allocation Research Guard
-- Allocation Scaffold Guard
-- Allocation Issue Guard
-- Allocation Status Guard
+## Contributing
 
-#### Content Warden Guards
-- Content Guard
-- Content Research Guard
-- Content Scaffold Guard
-- Content Issue Guard
-- Content Status Guard
-
-### Sequence
-1. Software pieces accumulate research notes, scaffolds, and issues in this repo.
-2. Wardens and guards retarget to the hardware side (directional optics, freeform/metasurface support, calibration & compensation).
-3. Package software side and hardware side as clean, documented modules.
-
-## Structure
-- `software/` — tracking, allocation, content
-- `hardware/` — future optics, backlight, calibration
-- `issues/` — quarantined problem notes (mirrored from GitHub issues)
-- `packages/` — final packaged outputs
-- `GUARDS.md` — full guard roster and duties
-
-Progress is deliberate. No rushing. The plan guides the path.
+Research notes, code scaffolds, and implementation work are welcome in the appropriate subdirectory. Please keep changes focused on the relevant component.
