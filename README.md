@@ -19,3 +19,7 @@ Software foundations are under development. Tracking research notes and a basic 
 ## Contributing
 
 Research notes, code scaffolds, and implementation work are welcome in the appropriate subdirectory. Please keep changes focused on the relevant component.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
